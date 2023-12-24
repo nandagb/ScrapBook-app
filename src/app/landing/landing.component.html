@@ -1,32 +1,45 @@
 <body >
     <header>
         <button class="icon-button">
-            <i class="bi bi-list h2"></i>
+            <i class="bi bi-list h1"></i>
         </button>
         <button class="text-button">
-            <p class="text-buttons">Home</p>
+            <p class="text-buttons-header">Home</p>
         </button>
         <button class="text-button">
-            <p class="text-buttons">Contacts</p>
+            <p class="text-buttons-header">Contacts</p>
         </button>
         <button class="text-button">
-            <p class="text-buttons">Login</p>
+            <p class="text-buttons-header">Login</p>
         </button>
     </header>
     <div class="content-container">
         <div class="title-container">
             <h1>ScrapBook</h1>
-            <p>
+            <p class="intro-text">
                 All you need to plan and track
                 your life in one single place.
                 Customize and have fun
                 decorating your own scrapbook
                 online!
             </p>
+            <div class="buttons-container">
+                <button class="text-button">
+                    <div class="button-background">
+                        <i class="bi bi-envelope h1"></i>
+                        <p class="text-button">Email</p>
+                    </div>
+                </button>
+                <button class="text-button">
+                    <div class="button-background">
+                        <p class="text-button">About Us</p>
+                    </div>
+                </button>
+            </div>
         </div>
         <div class="image-container">
             <div class="background">
-                <img [src]="imageUrl" alt="Girl Reading A Book">
+                <img [src]="imageUrl" alt="Girl Reading A Book" class="image-girl">
             </div>
         </div>
     </div>
