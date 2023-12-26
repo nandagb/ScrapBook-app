@@ -1,1 +1,52 @@
-<p>login works!!!</p>
+<body class="content-container">
+    <div class="left-container">
+        <div class="left-content-container">
+            <div class="title">
+                <h1>Welcome Back!</h1>
+            </div>
+            <img [src]="imageUrl" alt="Girl Reading A Book" class="image-girl">
+        </div>
+        
+    </div>
+    <div class="right-container">
+        <div class="form-container">
+            <div class="title">
+                <h1 class="login">Login</h1>
+            </div>
+            <p class="description">Enter your email and password to login</p>
+            <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+                <div class="label-input-container">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" formControlName="email">
+                </div>
+                <div class="label-input-container">
+                    <label for="password">Password</label>
+                    <div class="input-container">
+                        <i class="bi bi-eye-slash-fill h4"></i>
+                        <input type="text" id="password" formControlName="password">
+                        <!-- <i class="bi bi-eye-fill"></i> -->
+                    </div>
+                </div>
+                <div class="login-info">
+                    <div class="check">
+                        <!-- <i class="bi bi-check-circle"></i> -->
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Remember Me</p>
+                    </div>
+                    <p>Forgot Password?</p>
+                </div>
+                <div class="signup">
+                    <p>Don't have an account?</p>
+                    <p class="link">SignUp</p>
+                </div>
+                <div class="button-container">
+                    <button class="text-button">
+                        <div class="button-background">
+                            <p class="text-button">Login</p>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>>
+</body>
