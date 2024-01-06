@@ -7,11 +7,15 @@ import { Router } from '@angular/router';
   styleUrl: './landing.component.css',
 })
 export class LandingComponent {
-  imageUrl: string = 'assets/images/reading-book.png'
+  imageUrl: string = ''
 
   constructor(private router: Router) {}
 
   navigateToLogin() {
     this.router.navigate(['/login']);
+  }
+
+  ngOnInit() {
+    this.imageUrl = 'assets/images/reading-book.png';
   }
 }

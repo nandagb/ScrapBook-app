@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit{
-  imageUrl: string = 'assets/images/meditation.png'
+  imageUrl: string = ''
 
   loginForm: FormGroup = new FormGroup({});
 
@@ -18,6 +18,8 @@ export class LoginComponent implements OnInit{
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
     });
+
+    this.imageUrl = 'assets/images/meditation.png';
   }
 
   submitForm() {
@@ -25,5 +27,7 @@ export class LoginComponent implements OnInit{
       console.log(this.loginForm.value);
     }
   }
+
+  
 
 }
