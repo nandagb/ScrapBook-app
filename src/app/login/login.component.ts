@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginComponent implements OnInit{
 
   loginForm: FormGroup = new FormGroup({});
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
@@ -26,6 +27,10 @@ export class LoginComponent implements OnInit{
     if(this.loginForm.valid) {
       console.log(this.loginForm.value);
     }
+  }
+
+  navigateToSignUp() {
+    this.router.navigate(['/signup']);
   }
 
   
