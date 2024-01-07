@@ -1,1 +1,55 @@
-<p>signup works!</p>
+<body class="content-container">
+    <div class="left-container">
+        <div class="left-content-container">
+            <div class="title">
+                <h1>Welcome to ScrapBook!</h1>
+            </div>
+            <img [src]="imageUrl" alt="Girl Reading A Book" class="image-girl">
+        </div>
+        
+    </div>
+    <div class="right-container">
+        <div class="form-container">
+            <div class="title">
+                <h1 class="signup">Create an Account</h1>
+            </div>
+            <form [formGroup]="signupForm" (ngSubmit)="submitForm()">
+                <div class="label-input-container">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" formControlName="full_name">
+                </div>
+                <div class="label-input-container">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" formControlName="email">
+                </div>
+                <div class="label-input-container">
+                    <label for="password">Password</label>
+                    <div class="input-container">
+                        <i class="bi bi-eye-slash-fill h4"></i>
+                        <input type="text" id="password" formControlName="password">
+                        <!-- <i class="bi bi-eye-fill"></i> -->
+                    </div>
+                </div>
+                <div class="label-input-container">
+                    <label for="password_confirmation">Password Confirmation</label>
+                    <div class="input-container">
+                        <i class="bi bi-eye-slash-fill h4"></i>
+                        <input type="text" id="password_confirmation" formControlName="password_confirmation">
+                        <!-- <i class="bi bi-eye-fill"></i> -->
+                    </div>
+                </div>
+                <div class="signup">
+                    <p>Already have an account?</p>
+                    <p (click)="navigateToLogin()" class="link">Login</p>
+                </div>
+                <div class="button-container">
+                    <button class="text-button">
+                        <div class="button-background">
+                            <p class="text-button">Login</p>
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>>
+</body>
