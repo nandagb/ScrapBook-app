@@ -1,1 +1,14 @@
-<p>home works!</p>
+<body>
+    <app-side-menu></app-side-menu>
+    <p>home works!</p>
+    <div class="right-container">
+        <div class="profile-container">
+            <div class="profile-picture-container">
+                <img [src]="imageUrl" alt="Profile picture" class="profile-picture">
+            </div>
+            <p class="username">{{username}}</p>
+        </div>
+        <app-pages-list></app-pages-list>
+    </div>
+    
+</body>

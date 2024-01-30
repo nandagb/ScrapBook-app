@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    background-color: #FFBEBE;
+    height: 100vh;
+    justify-content: space-between;
+    overflow-y: hidden;
+
+    .right-container {
+        .profile-container {
+            display: flex;
+            padding: 10px 30px 0 0;
+            justify-content: flex-end;
+    
+            .profile-picture-container {
+                width: 65px;
+                height: 65px;
+        
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+    
+            p {
+                padding: 5px 10px 0 15px;
+                font-weight: bold;
+            }
+        }   
+    }
+}
+

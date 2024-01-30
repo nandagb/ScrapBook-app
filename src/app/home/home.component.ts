@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  imageUrl: string = ''
+  username: String = ''
 
+  ngOnInit() {
+    this.imageUrl = 'assets/images/foto-perfil.PNG';
+    this.username = 'Fernanda';
+  }
 }
